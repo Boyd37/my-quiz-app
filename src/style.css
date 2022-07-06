@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 550px;
+    min-height: 550px;  
+    font-family: 'Karla', sans-serif;
+    background-color: #F5F7FB;
+    border-radius: 4px;
+}
+
+    /* intro screen */
+
+.start-display{
+    text-align: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-title,
+.start-description{
+    margin: 0;
+}
+
+.start-title{
+    margin-bottom: 10px;
+}
+
+.start-description{
+    margin-bottom: 30px;
+}
+
+.start-btn{
+    background-color: #4D5B9E;
+    width: 194px;
+    height: 52px;
+    color: #F5F7FB;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Karla', sans-serif;
+}
+
+  /* question card elements */
+
+.question-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-card{
+    width: 400px;
+    border-bottom: #DBDEF0 1px solid;
+}
+
+.question-title{
+    font-size: 16px;
+}
+
+.answer-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.answer-option{
+    font-size: 12px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #293264;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.submit-btn{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #D6DBF5;
+    border: 1px solid #D6DBF5;
+}
+
+.green{
+    background-color: #94D7A2;
+    border: 1px solid #94D7A2;
+}
+
+.red{
+    background-color: #F8BCBC;
+    border: 1px solid #F8BCBC;
+}
+
+.not-correct{
+    opacity: 0.5
+}
+
+/* quiz submit condition */
+
+.submit-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.score-display{
+    color: #293264;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.reset-btn{
+    
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    cursor: pointer;
+}
